@@ -44,7 +44,7 @@ export const useChat = () => {
 
         if (!response.ok) {
             const payload = await response.json().catch(() => null);
-            const errorMessage = payload?.detail || payload?.error || 'Failed to fetch history';
+            const errorMessage = payload?.error || payload?.detail || 'Failed to fetch history';
             throw new Error(errorMessage);
         }
 
