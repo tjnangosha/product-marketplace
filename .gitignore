@@ -36,6 +36,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+!frontend/lib/
+!frontend/lib/**
 
 # DB
 postgres_data/
